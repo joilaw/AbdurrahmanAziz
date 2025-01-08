@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 19, 2024 11:29:32 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="db_rpl2" name="javaapplication3.ModelAkun" optimistic-lock="version" table="akun">
+    <id name="idAkun" type="java.lang.Integer">
+      <column name="id_akun"/>
+      <generator class="identity"/>
+    </id>
+    <property name="nama" type="string">
+      <column length="999" name="nama" not-null="true"/>
+    </property>
+    <property name="status" type="string">
+      <column length="100" name="status" not-null="true"/>
+    </property>
+    <property name="tgl" type="string">
+      <column length="100" name="tgl" not-null="true"/>
+    </property>
+    <property name="nominal" type="int">
+      <column name="nominal" not-null="true"/>
+    </property>
+  </class>
+</hibernate-mapping>
